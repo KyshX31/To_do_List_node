@@ -4,12 +4,12 @@ import dotenv from "dotenv";
 import todoRoutes from "./todos.js";
 
 dotenv.config();
-
+// this is a xdemo
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON
-app.use(express.json());
+app.use(express.json("hello"));
 
 // Connect to MongoDB
 mongoose
